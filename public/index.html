@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Music Discovery</title>
+  <style>
+    :root {
+      --bg-base: #0a0e14;
+      --card-bg: rgba(255,255,255,0.035);
+      --card-border: rgba(255,255,255,0.07);
+      --card-border-hover: rgba(255,255,255,0.12);
+      --card-shadow: 0 1px 2px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.04);
+      --text: #f2f2f5;
+      --muted: rgba(242,242,245,0.55);
+      --muted-strong: rgba(242,242,245,0.78);
+      --divider: rgba(255,255,255,0.05);
+      --accent: #6a9bff;
+      --accent-soft: rgba(106,155,255,0.18);
+      --green-soft: rgba(126,217,87,0.15);
+      --green: #7ed957;
+      --fs-xs: 10px; --fs-sm: 11px; --fs-md: 12px; --fs-base: 14px;
+      --fs-lg: 16px; --fs-xl: 20px; --fs-2xl: 28px;
+      --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
+      --sp-5: 20px; --sp-6: 24px; --sp-7: 32px; --sp-8: 40px;
+      --r-sm: 6px; --r-md: 10px; --r-lg: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0; padding: var(--sp-7) var(--sp-6);
+      background: var(--bg-base); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: var(--fs-base); line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    a { color: inherit; }
+
+    /* ── Nav ─────────────────────────────────────────── */
+    .date-nav {
+      max-width: 900px; margin: 0 auto var(--sp-6);
+      display: flex; align-items: center; gap: var(--sp-3);
+    }
+    .nav-btn {
+      appearance: none; background: var(--card-bg);
+      border: 1px solid var(--card-border); border-radius: var(--r-sm);
+      color: var(--text); font-size: var(--fs-sm); padding: 6px 14px;
+      cursor: pointer; transition: border-color 0.15s, background 0.15s;
+      white-space: nowrap;
+    }
+    .nav-btn:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-soft); }
+    .nav-btn:disabled { opacity: 0.3; cursor: default; }
+    .nav-date-label {
+      flex: 1; text-align: center;
+      font-size: var(--fs-sm); color: var(--muted);
+    }
+    .nav-date-select {
+      appearance: none; background: var(--card-bg);
+      border: 1px solid var(--card-border); border-radius: var(--r-sm);
+      color: var(--text); font-size: var(--fs-sm); padding: 6px 14px;
+      cursor: pointer; font-family: inherit;
+    }
+    .nav-date-select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    /* ── Header ──────────────────────────────────────── */
+    .page-header {
+      max-width: 900px; margin: 0 auto var(--sp-8);
+    }
+    .page-label {
+      font-size: var(--fs-sm); font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.12em; color: var(--accent); margin-bottom: var(--sp-2);
+    }
+    .page-title {
+      font-size: var(--fs-2xl); font-weight: 700; letter-spacing: -0.02em;
+      color: var(--text); margin: 0 0 var(--sp-2);
+    }
+    .page-date { font-size: var(--fs-base); color: var(--muted); }
+    .page-stats { margin-top: var(--sp-3); font-size: var(--fs-md); color: var(--muted); }
+
+    .spotify-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      margin-top: var(--sp-3);
+      background: var(--green-soft); border: 1px solid rgba(126,217,87,0.25);
+      color: var(--green); font-size: var(--fs-sm); font-weight: 600;
+      padding: 5px 14px; border-radius: 999px; text-decoration: none;
+      transition: background 0.15s;
+    }
+    .spotify-link:hover { background: rgba(126,217,87,0.22); }
+
+    /* ── Tiers ───────────────────────────────────────── */
+    .tier-section {
+      max-width: 900px; margin: 0 auto var(--sp-7);
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      border-radius: var(--r-lg); box-shadow: var(--card-shadow);
+      padding: var(--sp-6);
+      animation: enterFade 0.35s ease both;
+      animation-delay: calc(var(--enter-i, 0) * 0.06s);
+    }
+    @keyframes enterFade {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @media (prefers-reduced-motion: reduce) { .tier-section { animation: none; } }
+
+    .tier-header {
+      display: flex; align-items: flex-start; gap: var(--sp-4);
+      margin-bottom: var(--sp-6); padding-bottom: var(--sp-5);
+      border-bottom: 1px solid var(--divider);
+    }
+    .tier-number {
+      font-size: var(--fs-xl); font-weight: 700; font-variant-numeric: tabular-nums;
+      color: var(--accent); opacity: 0.5; min-width: 2ch; line-height: 1; padding-top: 2px;
+    }
+    .tier-title {
+      font-size: var(--fs-lg); font-weight: 700; letter-spacing: -0.01em;
+      color: var(--text); margin: 0 0 var(--sp-1);
+    }
+    .tier-desc { font-size: var(--fs-md); color: var(--muted); margin: 0; }
+
+    .tier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-7); }
+    @media (max-width: 700px) { .tier-grid { grid-template-columns: 1fr; } }
+
+    .col-head {
+      font-size: var(--fs-sm); font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.11em; color: var(--muted); margin: 0 0 var(--sp-4);
+    }
+
+    /* ── Picks ───────────────────────────────────────── */
+    .pick { padding: var(--sp-4) 0; border-bottom: 1px solid var(--divider); }
+    .pick:last-child { border-bottom: none; }
+    .pick-head { display: flex; flex-direction: column; gap: 2px; margin-bottom: var(--sp-2); }
+    .pick-title {
+      font-weight: 600; color: var(--text); text-decoration: none;
+      font-size: var(--fs-lg); letter-spacing: -0.01em;
+    }
+    .pick-title:hover { color: var(--accent); }
+    .pick-meta { font-size: var(--fs-base); color: var(--muted); }
+    .pick-mood {
+      display: inline-block; font-size: var(--fs-sm); padding: 3px 9px;
+      background: var(--accent-soft); color: var(--accent);
+      border-radius: 999px; font-weight: 500; margin-bottom: var(--sp-2);
+    }
+    .pick-reason {
+      font-size: var(--fs-base); color: var(--muted-strong); margin: 0; line-height: 1.55;
+    }
+
+    /* ── DJ Sets ─────────────────────────────────────── */
+    .dj-sets-list { list-style: none; margin: 0; padding: 0; }
+    .dj-set {
+      display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4);
+      padding: var(--sp-4) 0; border-bottom: 1px solid var(--divider);
+    }
+    .dj-set:last-child { border-bottom: none; }
+    .dj-set-main { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+    .dj-set-title {
+      font-weight: 600; color: var(--text); text-decoration: none;
+      font-size: var(--fs-lg); letter-spacing: -0.01em;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .dj-set-title:hover { color: var(--accent); }
+    .dj-set-meta { font-size: var(--fs-base); color: var(--muted); }
+    .dj-set-link {
+      font-size: var(--fs-sm); font-weight: 500;
+      color: var(--accent); text-decoration: none; opacity: 0.75;
+      padding: 4px 10px; border: 1px solid var(--divider);
+      border-radius: 999px; white-space: nowrap; flex-shrink: 0;
+    }
+    .dj-set-link:hover { opacity: 1; border-color: var(--accent); }
+
+    /* ── States ──────────────────────────────────────── */
+    .state {
+      max-width: 900px; margin: var(--sp-8) auto;
+      text-align: center; color: var(--muted); font-size: var(--fs-base);
+    }
+    .state--error { color: #ff6b5e; }
+
+    footer {
+      max-width: 900px; margin: var(--sp-7) auto 0;
+      font-size: var(--fs-md); color: var(--muted); text-align: center;
+      padding-bottom: var(--sp-7);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="date-nav" id="dateNav" style="display:none">
+  <button class="nav-btn" id="prevBtn">← Prev</button>
+  <select class="nav-date-select" id="dateSelect" aria-label="Select week"></select>
+  <button class="nav-btn" id="nextBtn">Next →</button>
+</nav>
+
+<div id="root"><div class="state">Loading…</div></div>
+
+<footer id="footer" style="display:none"></footer>
+
+<script>
+(function () {
+  var TIER_META = {
+    deep_catalog:       { label: 'All-Time Bedrock',                 desc: 'Artists you\'ve returned to for years — the vault.' },
+    all_time_discovery: { label: 'Discovery — All-Time Adjacent',     desc: 'What you\'d probably love, seeded by your all-time taste.' },
+    recent_discovery:   { label: 'Discovery — This Year\'s Direction', desc: 'What you\'d probably love, seeded by where you are right now.' },
+    current_mood:       { label: 'Right Now',                         desc: 'The sharpest current signal — what you\'re actually playing this week.' },
+  };
+  var TIER_ORDER = ['deep_catalog', 'all_time_discovery', 'recent_discovery', 'current_mood'];
+
+  var allDates = [];
+  var currentDate = null;
+
+  function esc(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function formatLongDate(iso) {
+    try {
+      var d = new Date(iso + 'T12:00:00');
+      return d.toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    } catch { return iso; }
+  }
+
+  function formatShortDate(iso) {
+    try {
+      var d = new Date(iso);
+      return d.toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
+    } catch { return iso; }
+  }
+
+  function formatDuration(seconds) {
+    if (!seconds) return null;
+    var h = Math.floor(seconds / 3600);
+    var m = Math.floor((seconds % 3600) / 60);
+    return h > 0 ? h + 'h ' + m + 'm' : m + 'm';
+  }
+
+  function renderPick(p) {
+    var spotifyHref = p.spotifyUrl ? ' href="' + esc(p.spotifyUrl) + '" target="_blank" rel="noopener"' : '';
+    var tag = p.spotifyUrl ? 'a' : 'span';
+    return '<article class="pick">' +
+      '<div class="pick-head">' +
+        '<' + tag + ' class="pick-title"' + spotifyHref + '>' + esc(p.title) + '</' + tag + '>' +
+        '<span class="pick-meta">' + esc(p.artist) + (p.year ? ' · ' + esc(String(p.year)) : '') + '</span>' +
+      '</div>' +
+      (p.mood ? '<span class="pick-mood">' + esc(p.mood) + '</span>' : '') +
+      '<p class="pick-reason">' + esc(p.reason) + '</p>' +
+    '</article>';
+  }
+
+  function renderTierSection(tier, albums, songs, index) {
+    var meta = TIER_META[tier] || { label: tier, desc: '' };
+    var tierAlbums = albums.filter(function (a) { return a.tier === tier; });
+    var tierSongs = songs.filter(function (s) { return s.tier === tier; });
+    if (!tierAlbums.length && !tierSongs.length) return '';
+    return '<section class="tier-section" style="--enter-i:' + index + '">' +
+      '<div class="tier-header">' +
+        '<div class="tier-number">' + String(index + 1).padStart(2, '0') + '</div>' +
+        '<div><h2 class="tier-title">' + esc(meta.label) + '</h2><p class="tier-desc">' + esc(meta.desc) + '</p></div>' +
+      '</div>' +
+      '<div class="tier-grid">' +
+        '<div class="tier-col"><h3 class="col-head">Albums</h3>' + tierAlbums.map(renderPick).join('') + '</div>' +
+        '<div class="tier-col"><h3 class="col-head">Songs</h3>' + tierSongs.map(renderPick).join('') + '</div>' +
+      '</div>' +
+    '</section>';
+  }
+
+  function renderDjSection(djSets, enterIndex) {
+    if (!djSets || !djSets.length) return '';
+    var items = djSets.map(function (set) {
+      var dur = set.durationSeconds ? formatDuration(set.durationSeconds) : null;
+      return '<li class="dj-set">' +
+        '<div class="dj-set-main">' +
+          '<a class="dj-set-title" href="' + esc(set.url) + '" target="_blank" rel="noopener">' + esc(set.setName) + '</a>' +
+          '<span class="dj-set-meta">' + esc(set.artist) + ' · ' + esc(formatShortDate(set.createdAt)) + (dur ? ' · ' + esc(dur) : '') + '</span>' +
+        '</div>' +
+        '<a class="dj-set-link" href="' + esc(set.url) + '" target="_blank" rel="noopener">SoundCloud ↗</a>' +
+      '</li>';
+    }).join('');
+    return '<section class="tier-section" style="--enter-i:' + enterIndex + '">' +
+      '<div class="tier-header">' +
+        '<div class="tier-number" style="font-size:var(--fs-lg);opacity:0.4;padding-top:3px;">♫</div>' +
+        '<div><h2 class="tier-title">Recent DJ Sets</h2><p class="tier-desc">From your electronic artists on SoundCloud, past 24 months.</p></div>' +
+      '</div>' +
+      '<ul class="dj-sets-list">' + items + '</ul>' +
+    '</section>';
+  }
+
+  function render(snapshot) {
+    var albums = (snapshot.picks && snapshot.picks.albums) || [];
+    var songs = (snapshot.picks && snapshot.picks.songs) || [];
+    var djSets = snapshot.djSets || [];
+    var date = snapshot.date;
+
+    var tiersHtml = TIER_ORDER.map(function (tier, i) {
+      return renderTierSection(tier, albums, songs, i);
+    }).join('');
+
+    var spotifyHtml = snapshot.spotifyPlaylistUrl
+      ? '<a class="spotify-link" href="' + esc(snapshot.spotifyPlaylistUrl) + '" target="_blank" rel="noopener">▶ Open in Spotify</a>'
+      : '';
+
+    var html =
+      '<header class="page-header">' +
+        '<p class="page-label">Weekly Music Discovery</p>' +
+        '<h1 class="page-title">Your week in music</h1>' +
+        '<p class="page-date">' + esc(formatLongDate(date)) + '</p>' +
+        '<p class="page-stats">' + albums.length + ' albums · ' + songs.length + ' songs · 4 perspectives' + (djSets.length ? ' · ' + djSets.length + ' DJ sets' : '') + '</p>' +
+        spotifyHtml +
+      '</header>' +
+      tiersHtml +
+      renderDjSection(djSets, TIER_ORDER.length);
+
+    document.getElementById('root').innerHTML = html;
+
+    var footer = document.getElementById('footer');
+    footer.style.display = '';
+    footer.textContent = 'Generated ' + formatShortDate(snapshot.generatedAt);
+  }
+
+  function setLoading() {
+    document.getElementById('root').innerHTML = '<div class="state">Loading…</div>';
+  }
+
+  function setError(msg) {
+    document.getElementById('root').innerHTML = '<div class="state state--error">' + esc(msg) + '</div>';
+  }
+
+  function getDateFromUrl() {
+    var params = new URLSearchParams(window.location.search);
+    return params.get('date') || null;
+  }
+
+  function pushDate(date) {
+    var url = date === allDates[0]
+      ? window.location.pathname
+      : window.location.pathname + '?date=' + date;
+    history.pushState({ date: date }, '', url);
+  }
+
+  function updateNav() {
+    var nav = document.getElementById('dateNav');
+    if (!allDates.length) { nav.style.display = 'none'; return; }
+    nav.style.display = '';
+
+    var idx = allDates.indexOf(currentDate);
+    document.getElementById('prevBtn').disabled = idx >= allDates.length - 1;
+    document.getElementById('nextBtn').disabled = idx <= 0;
+    document.getElementById('dateSelect').value = currentDate;
+  }
+
+  function loadDate(date) {
+    if (!date || !allDates.includes(date)) date = allDates[0];
+    currentDate = date;
+    setLoading();
+    updateNav();
+    fetch('data/' + date + '.json')
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function (snapshot) {
+        render(snapshot);
+        document.title = 'Music Discovery — ' + date;
+      })
+      .catch(function (err) {
+        setError('Could not load snapshot for ' + date + ': ' + err.message);
+      });
+  }
+
+  function buildSelect() {
+    var sel = document.getElementById('dateSelect');
+    sel.innerHTML = allDates.map(function (d) {
+      return '<option value="' + esc(d) + '">' + esc(formatLongDate(d)) + '</option>';
+    }).join('');
+    sel.addEventListener('change', function () {
+      var d = sel.value;
+      pushDate(d);
+      loadDate(d);
+    });
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', function () {
+    var idx = allDates.indexOf(currentDate);
+    if (idx < allDates.length - 1) {
+      var d = allDates[idx + 1];
+      pushDate(d);
+      loadDate(d);
+    }
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', function () {
+    var idx = allDates.indexOf(currentDate);
+    if (idx > 0) {
+      var d = allDates[idx - 1];
+      pushDate(d);
+      loadDate(d);
+    }
+  });
+
+  window.addEventListener('popstate', function (e) {
+    var d = (e.state && e.state.date) || allDates[0];
+    currentDate = d;
+    updateNav();
+    loadDate(d);
+  });
+
+  fetch('data/index.json')
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function (dates) {
+      allDates = dates;
+      buildSelect();
+      var requested = getDateFromUrl();
+      loadDate(requested && allDates.includes(requested) ? requested : allDates[0]);
+    })
+    .catch(function (err) {
+      setError('Could not load index: ' + err.message + '. Make sure snapshots have been generated.');
+    });
+})();
+</script>
+</body>
+</html>
