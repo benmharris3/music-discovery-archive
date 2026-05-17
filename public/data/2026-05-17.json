@@ -1,0 +1,743 @@
+{
+  "date": "2026-05-17",
+  "generatedAt": "2026-05-17T09:55:45.713Z",
+  "picks": {
+    "albums": [
+      {
+        "kind": "album",
+        "tier": "deep_catalog",
+        "artist": "Radiohead",
+        "title": "The Bends",
+        "year": 1995,
+        "mood": "raw yearning tension",
+        "reason": "Radiohead are your second most-played artist of all time with 2050 plays, but your top tracks skew heavily toward OK Computer and Kid A era — The Bends is the hungry, guitar-driven earlier chapter worth revisiting.",
+        "spotifyUrl": "https://open.spotify.com/search/Radiohead%20The%20Bends"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_catalog",
+        "artist": "Daft Punk",
+        "title": "Homework",
+        "year": 1997,
+        "mood": "filter house euphoria",
+        "reason": "With nearly 3000 all-time plays, Daft Punk are your most-loved artist by a wide margin — Homework is the raw, funky origin point that's easy to overlook once Discovery becomes comfort food.",
+        "spotifyUrl": "https://open.spotify.com/search/Daft%20Punk%20Homework"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_catalog",
+        "artist": "Pink Floyd",
+        "title": "Wish You Were Here",
+        "year": 1975,
+        "mood": "elegiac psychedelic drift",
+        "reason": "Pink Floyd sit at 1199 all-time plays and this album is their most emotionally direct — a quiet counterpoint to the architectural grandeur of The Wall or Dark Side that rewards a slow revisit.",
+        "spotifyUrl": "https://open.spotify.com/search/Pink%20Floyd%20Wish%20You%20Were%20Here"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_catalog",
+        "artist": "Air",
+        "title": "Talkie Walkie",
+        "year": 2004,
+        "mood": "tender space pop",
+        "reason": "Air clock 1011 all-time plays for you and this is their most intimate, melodically rich record — warmer and more personal than Moon Safari and likely overdue a proper revisit.",
+        "spotifyUrl": "https://open.spotify.com/search/Air%20Talkie%20Walkie"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_catalog",
+        "artist": "Röyksopp",
+        "title": "Melody A.M.",
+        "year": 2001,
+        "mood": "glacial electronic warmth",
+        "reason": "Röyksopp are one of your most-played artists at 1062 plays — this debut is the foundational document of their sound, all downtempo haze and Nordic melancholy that never really ages.",
+        "spotifyUrl": "https://open.spotify.com/search/R%C3%B6yksopp%20Melody%20A.M."
+      },
+      {
+        "kind": "album",
+        "tier": "deep_catalog",
+        "artist": "Orbital",
+        "title": "Brown Album",
+        "year": 1993,
+        "mood": "open-road techno",
+        "reason": "Orbital are embedded in your all-time top 12 at 777 plays — this sprawling second album is one of the great overlooked techno records and may not have had a proper spin in years.",
+        "spotifyUrl": "https://open.spotify.com/search/Orbital%20Brown%20Album"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_catalog",
+        "artist": "The Strokes",
+        "title": "Room on Fire",
+        "year": 2003,
+        "mood": "wired NYC cool",
+        "reason": "The Strokes sit at 652 all-time plays and Room on Fire is their tightest, most underrated album — sharper than Is This It and more consistent than First Impressions, it deserves the vault revisit.",
+        "spotifyUrl": "https://open.spotify.com/search/The%20Strokes%20Room%20on%20Fire"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_catalog",
+        "artist": "Leftfield",
+        "title": "Rhythm and Stealth",
+        "year": 1999,
+        "mood": "dark pressure groove",
+        "reason": "Leftfield are at 1016 all-time plays and Release the Pressure is one of your most-played tracks ever — Rhythm and Stealth is the heavier, more muscular follow-up to Leftism that often gets skipped.",
+        "spotifyUrl": "https://open.spotify.com/search/Leftfield%20Rhythm%20and%20Stealth"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Moderat",
+        "title": "II",
+        "year": 2013,
+        "mood": "brooding electronic beauty",
+        "reason": "You love Radiohead's tension and Daft Punk's electronic craft — Moderat sit exactly at that intersection, and II is their most emotionally devastating record, full of dark texture and melodic ache.",
+        "spotifyUrl": "https://open.spotify.com/search/Moderat%20II"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Bonobo",
+        "title": "Black Sands",
+        "year": 2010,
+        "mood": "organic downtempo warmth",
+        "reason": "Your liked track Kiara by Bonobo is a strong signal toward his catalogue — Black Sands is the breakthrough album where his jazz-inflected, live-instrument downtempo sound fully crystallised.",
+        "spotifyUrl": "https://open.spotify.com/search/Bonobo%20Black%20Sands"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Boards of Canada",
+        "title": "Music Has the Right to Children",
+        "year": 1998,
+        "mood": "hazy nostalgic electronic",
+        "reason": "Your deep love for Orbital, Leftfield and Röyksopp places you squarely in IDM/downtempo territory — this is arguably the genre's most iconic album and a genuine blind spot if you haven't lived inside it.",
+        "spotifyUrl": "https://open.spotify.com/search/Boards%20of%20Canada%20Music%20Has%20the%20Right%20to%20Children"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Moloko",
+        "title": "Things to Make and Do",
+        "year": 2000,
+        "mood": "playful art-pop groove",
+        "reason": "Your love of Justice, Daft Punk and The Strokes suggests a taste for rhythm with personality — Moloko's masterpiece sits at the crossroads of dance, funk and sharp songwriting in a way few records do.",
+        "spotifyUrl": "https://open.spotify.com/search/Moloko%20Things%20to%20Make%20and%20Do"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Jon Hopkins",
+        "title": "Immunity",
+        "year": 2013,
+        "mood": "transcendent techno arc",
+        "reason": "You've spent years with Underworld, Orbital and Leftfield — Immunity is the modern heir to that lineage, building from delicate piano into crushing electronic catharsis across a single seamless journey.",
+        "spotifyUrl": "https://open.spotify.com/search/Jon%20Hopkins%20Immunity"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Portishead",
+        "title": "Dummy",
+        "year": 1994,
+        "mood": "cinematic trip-hop dread",
+        "reason": "James Blake's soul-damaged electronics and Massive Attack's appearance in your recent listening both point toward trip-hop's founding document — Dummy is still one of the most atmospheric records ever made.",
+        "spotifyUrl": "https://open.spotify.com/search/Portishead%20Dummy"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Four Tet",
+        "title": "Rounds",
+        "year": 2003,
+        "mood": "fractured folk electronica",
+        "reason": "Four Tet appear in your recent 12-month listening but Rounds predates that and represents a different, more intricate side of his craft — a cult classic in the same lane as your beloved Röyksopp and Air.",
+        "spotifyUrl": "https://open.spotify.com/search/Four%20Tet%20Rounds"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Caribou",
+        "title": "Swim",
+        "year": 2010,
+        "mood": "psychedelic electronic bloom",
+        "reason": "Your all-time taste in Pink Floyd's expansiveness and Daft Punk's electronic craft finds a natural modern meeting point here — Swim is krautronic, psychedelic and deeply melodic in equal measure.",
+        "spotifyUrl": "https://open.spotify.com/search/Caribou%20Swim"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "GoGo Penguin",
+        "title": "Man Made Object",
+        "year": 2016,
+        "mood": "electronic jazz urgency",
+        "reason": "Your recent heavy listening to Oscar Peterson Trio and Nils Frahm suggests you're in a jazz-meets-contemporary-classical space — GoGo Penguin sit right there, fusing acoustic jazz trio energy with glitchy electronic architecture.",
+        "spotifyUrl": "https://open.spotify.com/search/GoGo%20Penguin%20Man%20Made%20Object"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Yussef Kamaal",
+        "title": "Black Focus",
+        "year": 2016,
+        "mood": "cosmic jazz funk",
+        "reason": "Bill Withers, Charles Bradley and the Oscar Peterson Trio dominate your recent listening — Black Focus merges that jazz soul lineage with UK contemporary energy in a way that feels directly adjacent to where you are now.",
+        "spotifyUrl": "https://open.spotify.com/search/Yussef%20Kamaal%20Black%20Focus"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Rival Consoles",
+        "title": "Persona",
+        "year": 2016,
+        "mood": "emotive modular pulse",
+        "reason": "Your recent arc through Nils Frahm, Ben Lukas Boysen and Ólafur Arnalds points toward Berlin-school ambient electronics — Rival Consoles works in that same emotional but rhythmically alive space.",
+        "spotifyUrl": "https://open.spotify.com/search/Rival%20Consoles%20Persona"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Floating Points",
+        "title": "Elaenia",
+        "year": 2015,
+        "mood": "jazz-laced electronic drift",
+        "reason": "Your recent listening weaves between Max Cooper's techno, Nils Frahm's minimalism and jazz — Elaenia does all three simultaneously across one stunning, continuous album arc.",
+        "spotifyUrl": "https://open.spotify.com/search/Floating%20Points%20Elaenia"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Hiatus Kaiyote",
+        "title": "Choose Your Weapon",
+        "year": 2015,
+        "mood": "neo-soul future funk",
+        "reason": "Bill Withers and Charles Bradley are central to your recent listening and this is where that soul tradition lands in the 21st century — Hiatus Kaiyote are impossibly musical and warmly human throughout.",
+        "spotifyUrl": "https://open.spotify.com/search/Hiatus%20Kaiyote%20Choose%20Your%20Weapon"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Khruangbin",
+        "title": "The Universe Smiles Upon You",
+        "year": 2014,
+        "mood": "global groove meditation",
+        "reason": "Khruangbin appear strongly in your recent and current listening — you've been deep in Con Todo El Mundo but their debut is a different, sparser, more hypnotic world that rewards separate attention.",
+        "spotifyUrl": "https://open.spotify.com/search/Khruangbin%20The%20Universe%20Smiles%20Upon%20You"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Max Richter",
+        "title": "Sleep",
+        "year": 2015,
+        "mood": "slow ambient immersion",
+        "reason": "Your recent pull toward Brambles, Ólafur Arnalds and Nils Frahm's quieter work all point toward this — Sleep is a monumental eight-hour ambient work, but its single-disc version is a perfect focused listen.",
+        "spotifyUrl": "https://open.spotify.com/search/Max%20Richter%20Sleep"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Theo Parrish",
+        "title": "Parallel Dimensions",
+        "year": 2000,
+        "mood": "raw deep house soul",
+        "reason": "Your recent tracks include deep house and soul-adjacent club music via Roy Davis Jr., DJ Koze and Super Flu — Theo Parrish is the spiritual godfather of that raw, feeling-first deep house lineage.",
+        "spotifyUrl": "https://open.spotify.com/search/Theo%20Parrish%20Parallel%20Dimensions"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Tosca",
+        "title": "Dehli9",
+        "year": 2009,
+        "mood": "lush downtempo exotica",
+        "reason": "Tosca have 30 plays this week alone and are the single strongest signal in your current listening — Dehli9 is their most richly textured album and hasn't appeared in your recent plays list.",
+        "spotifyUrl": "https://open.spotify.com/search/Tosca%20Dehli9"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Ben Lukas Boysen",
+        "title": "Mirage",
+        "year": 2022,
+        "mood": "orchestral electronic shimmer",
+        "reason": "Ben Lukas Boysen is your second most-played artist this week with 23 plays — Mirage is a different album from the Gravity and Spells you've already been through, continuing his evolution into something more cinematic.",
+        "spotifyUrl": "https://open.spotify.com/search/Ben%20Lukas%20Boysen%20Mirage"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Joep Beving",
+        "title": "Prehension",
+        "year": 2017,
+        "mood": "meditative solo piano",
+        "reason": "Joep Beving has 15 plays this month and you've been deep in Liminal — Prehension is his debut and has a rawer, more unguarded quality that pairs perfectly with where your listening head seems to be right now.",
+        "spotifyUrl": "https://open.spotify.com/search/Joep%20Beving%20Prehension"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Bill Evans",
+        "title": "Waltz for Debby",
+        "year": 1962,
+        "mood": "intimate late-night jazz",
+        "reason": "Bill Evans has 14 plays this month and you've been into New Jazz Conceptions — Waltz for Debby is the warmer, more conversational live counterpart and one of the most beautiful jazz recordings ever made.",
+        "spotifyUrl": "https://open.spotify.com/search/Bill%20Evans%20Waltz%20for%20Debby"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Tom Misch",
+        "title": "Geography",
+        "year": 2018,
+        "mood": "sunny jazz-soul fusion",
+        "reason": "Tom Misch has 13 plays this month and you've been spending time with Full Circle — Geography is the debut that established his voice and has a looser, more exploratory energy worth returning to.",
+        "spotifyUrl": "https://open.spotify.com/search/Tom%20Misch%20Geography"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Nightmares on Wax",
+        "title": "Smokers Delight",
+        "year": 1995,
+        "mood": "hazy trip-hop warmth",
+        "reason": "Nightmares on Wax have been present across both your monthly and weekly listening — Smokers Delight is the foundational album of their catalogue and a different trip from In A Space Outta Dub.",
+        "spotifyUrl": "https://open.spotify.com/search/Nightmares%20on%20Wax%20Smokers%20Delight"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Moonchild",
+        "title": "Starfruit",
+        "year": 2019,
+        "mood": "velvet neo-soul glow",
+        "reason": "Moonchild have 7 plays this month and you've been through Voyager — Starfruit is their most sonically lush album and sits beautifully alongside the Bill Withers and Khruangbin warmth you're clearly craving right now.",
+        "spotifyUrl": "https://open.spotify.com/search/Moonchild%20Starfruit"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "A Winged Victory for the Sullen",
+        "title": "Atomos",
+        "year": 2014,
+        "mood": "vast orchestral stillness",
+        "reason": "A Winged Victory for the Sullen have 6 plays this week and you've been in The Undivided Five — Atomos was composed for a Wayne McGregor dance piece and has a more cinematic, spatial quality that matches your current contemplative mood.",
+        "spotifyUrl": "https://open.spotify.com/search/A%20Winged%20Victory%20for%20the%20Sullen%20Atomos"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Khruangbin",
+        "title": "Mordechai",
+        "year": 2020,
+        "mood": "global psychedelic groove",
+        "reason": "Khruangbin are one of your strongest signals this week with 12 plays and you've been deep in Con Todo El Mundo — Mordechai is their most vocally present and warmly grooved album, a natural next chapter.",
+        "spotifyUrl": "https://open.spotify.com/search/Khruangbin%20Mordechai"
+      }
+    ],
+    "songs": [
+      {
+        "kind": "song",
+        "tier": "deep_catalog",
+        "artist": "Radiohead",
+        "title": "Nude",
+        "year": 2007,
+        "mood": "suspended aching beauty",
+        "reason": "Reckoner is your most-played Radiohead track with 125 plays — Nude is its emotional sibling from In Rainbows, built on the same quiet devastation but rarely mentioned alongside it.",
+        "spotifyUrl": "https://open.spotify.com/search/Radiohead%20Nude"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_catalog",
+        "artist": "Daft Punk",
+        "title": "Instant Crush",
+        "year": 2013,
+        "mood": "bittersweet robot soul",
+        "reason": "You have six Daft Punk tracks in your all-time top 20 but none from Random Access Memories — Instant Crush is the most emotionally exposed thing they ever made and it deserves a proper revisit.",
+        "spotifyUrl": "https://open.spotify.com/search/Daft%20Punk%20Instant%20Crush"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_catalog",
+        "artist": "Röyksopp",
+        "title": "Poor Leno",
+        "year": 2001,
+        "mood": "melancholic Nordic drift",
+        "reason": "Röyksopp sit at 1062 all-time plays and this is one of the great deep cuts from Melody A.M. — a slow, aching piece of electronic melancholy that rewards headphone listening after a long gap.",
+        "spotifyUrl": "https://open.spotify.com/search/R%C3%B6yksopp%20Poor%20Leno"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_catalog",
+        "artist": "Led Zeppelin",
+        "title": "Kashmir",
+        "year": 1975,
+        "mood": "colossal hypnotic rock",
+        "reason": "Led Zeppelin are at 964 all-time plays and Kashmir is the one track that transcends genre and era entirely — a cyclical, trance-inducing monument that earns its place in any vault revisit.",
+        "spotifyUrl": "https://open.spotify.com/search/Led%20Zeppelin%20Kashmir"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_catalog",
+        "artist": "James Blake",
+        "title": "Retrograde",
+        "year": 2013,
+        "mood": "cathedral electronic soul",
+        "reason": "James Blake is your most-played single track artist with Postpone at 156 plays — Retrograde is from Overgrown and achieves a similar emotional scale with more orchestral grandeur.",
+        "spotifyUrl": "https://open.spotify.com/search/James%20Blake%20Retrograde"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_catalog",
+        "artist": "Underworld",
+        "title": "Cowgirl",
+        "year": 1994,
+        "mood": "euphoric trance surge",
+        "reason": "Underworld are at 633 all-time plays and Born Slippy is your landmark track — Cowgirl is the other side of that coin, slower-building and even more hypnotically rewarding once it opens up.",
+        "spotifyUrl": "https://open.spotify.com/search/Underworld%20Cowgirl"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_catalog",
+        "artist": "The Beatles",
+        "title": "A Day in the Life",
+        "year": 1967,
+        "mood": "orchestral psychedelic peak",
+        "reason": "The Beatles sit at 831 all-time plays and this is the track that still sounds like nothing else — a vault pick isn't complete without acknowledging their greatest recorded moment.",
+        "spotifyUrl": "https://open.spotify.com/search/The%20Beatles%20A%20Day%20in%20the%20Life"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_catalog",
+        "artist": "Muse",
+        "title": "Citizen Erased",
+        "year": 2001,
+        "mood": "epic progressive intensity",
+        "reason": "Muse are at 712 all-time plays and this is the Origin of Symmetry centrepiece — a seven-minute journey that rewards being turned up loud and suggests your taste runs toward music with genuine structural ambition.",
+        "spotifyUrl": "https://open.spotify.com/search/Muse%20Citizen%20Erased"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Moderat",
+        "title": "Bad Kingdom",
+        "year": 2013,
+        "mood": "dark anthem shimmer",
+        "reason": "Your love of Justice's dance floor drama and Radiohead's emotional weight both point here — Bad Kingdom is the track that crystallises exactly what Moderat do, and it's genuinely stunning.",
+        "spotifyUrl": "https://open.spotify.com/search/Moderat%20Bad%20Kingdom"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Jon Hopkins",
+        "title": "Open Eye Signal",
+        "year": 2013,
+        "mood": "transcendent techno build",
+        "reason": "You've lived with Orbital and Underworld for years — Open Eye Signal is the modern equivalent of their peak moments, a fifteen-minute journey that earns every second of its runtime.",
+        "spotifyUrl": "https://open.spotify.com/search/Jon%20Hopkins%20Open%20Eye%20Signal"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Portishead",
+        "title": "Glory Box",
+        "year": 1994,
+        "mood": "cinematic soul longing",
+        "reason": "Your James Blake depth and affection for emotionally heavy electronic music both trace back to something Portishead perfected — Glory Box remains one of the most affecting singles ever recorded.",
+        "spotifyUrl": "https://open.spotify.com/search/Portishead%20Glory%20Box"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Caribou",
+        "title": "Sun",
+        "year": 2010,
+        "mood": "psychedelic loop euphoria",
+        "reason": "Your love of Daft Punk's more hypnotic pieces and Pink Floyd's expansive production finds a modern echo here — Sun is the track that made Caribou's Swim make complete sense on first listen.",
+        "spotifyUrl": "https://open.spotify.com/search/Caribou%20Sun"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Boards of Canada",
+        "title": "Roygbiv",
+        "year": 1998,
+        "mood": "warm nostalgic haze",
+        "reason": "You've spent thousands of plays in the IDM and downtempo world via Orbital, Röyksopp and Leftfield — Roygbiv is the Boards of Canada track that will immediately confirm why this should be in your life.",
+        "spotifyUrl": "https://open.spotify.com/search/Boards%20of%20Canada%20Roygbiv"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Moloko",
+        "title": "Sing It Back",
+        "year": 1999,
+        "mood": "euphoric dance pop",
+        "reason": "Your love of Justice's anthemic dance floor moments and The Killers' melodic drive both find a satisfying answer in Sing It Back — a timeless groove that holds up completely.",
+        "spotifyUrl": "https://open.spotify.com/search/Moloko%20Sing%20It%20Back"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Floating Points",
+        "title": "LesAlpx",
+        "year": 2015,
+        "mood": "jazz-drone electronic drift",
+        "reason": "Your all-time electronic bedrock artists — Orbital, Underworld, Leftfield — all share a love of long-form hypnotic structure, and LesAlpx is Floating Points doing exactly that with jazz harmony underneath.",
+        "spotifyUrl": "https://open.spotify.com/search/Floating%20Points%20LesAlpx"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Trentemøller",
+        "title": "Moan",
+        "year": 2006,
+        "mood": "midnight techno menace",
+        "reason": "You've been loyal to dark, cinematic electronic music for years via Justice, Underworld and Leftfield — Moan is the Trentemøller track that sits perfectly in that lineage with its own distinctly noir character.",
+        "spotifyUrl": "https://open.spotify.com/search/Trentem%C3%B8ller%20Moan"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "GoGo Penguin",
+        "title": "Raven",
+        "year": 2016,
+        "mood": "kinetic jazz urgency",
+        "reason": "Your recent Oscar Peterson Trio and Nils Frahm listening suggests a taste for music that is simultaneously structured and emotionally immediate — Raven is the GoGo Penguin track that makes that case most powerfully.",
+        "spotifyUrl": "https://open.spotify.com/search/GoGo%20Penguin%20Raven"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Yussef Kamaal",
+        "title": "Strings of Light",
+        "year": 2016,
+        "mood": "cosmic jazz drift",
+        "reason": "Your recent listening arc from Bill Withers through Oscar Peterson to Max Cooper suggests a throughline of jazz-inflected feeling — Strings of Light is the track that holds all of that together in one extraordinary groove.",
+        "spotifyUrl": "https://open.spotify.com/search/Yussef%20Kamaal%20Strings%20of%20Light"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Hiatus Kaiyote",
+        "title": "Nakamarra",
+        "year": 2012,
+        "mood": "neo-soul cosmic warmth",
+        "reason": "Bill Withers and Charles Bradley are your recent soul anchors — Nakamarra is the track that announced Hiatus Kaiyote to the world and it has that same quality of warmth that feels deeply human.",
+        "spotifyUrl": "https://open.spotify.com/search/Hiatus%20Kaiyote%20Nakamarra"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Floating Points",
+        "title": "Nespole",
+        "year": 2015,
+        "mood": "jazz-laced electronic glow",
+        "reason": "Your recent 12-month listening spans Nils Frahm's minimalism and Max Cooper's techno — Nespole sits right at that junction, folding jazz piano into electronic structure with remarkable elegance.",
+        "spotifyUrl": "https://open.spotify.com/search/Floating%20Points%20Nespole"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Rival Consoles",
+        "title": "Recovery",
+        "year": 2016,
+        "mood": "emotive electronic pulse",
+        "reason": "Your recent Ben Lukas Boysen and Ólafur Arnalds listening reveals a taste for electronics with emotional directness — Recovery is the Rival Consoles track that makes that argument most compellingly.",
+        "spotifyUrl": "https://open.spotify.com/search/Rival%20Consoles%20Recovery"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Theo Parrish",
+        "title": "Falling Up",
+        "year": 2000,
+        "mood": "soulful deep house warmth",
+        "reason": "Your recent tracks include Roy Davis Jr., DJ Koze and Super Flu — all roads in that soulful deep house lineage eventually lead to Theo Parrish, and Falling Up is the track that shows you why.",
+        "spotifyUrl": "https://open.spotify.com/search/Theo%20Parrish%20Falling%20Up"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Max Richter",
+        "title": "On the Nature of Daylight",
+        "year": 2004,
+        "mood": "slow string heartbreak",
+        "reason": "Your recent listening through Brambles, Hania Rani and Nils Frahm shows a consistent pull toward music that slows time — this is one of the most quietly devastating pieces of modern classical music ever written.",
+        "spotifyUrl": "https://open.spotify.com/search/Max%20Richter%20On%20the%20Nature%20of%20Daylight"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Stimming",
+        "title": "Seta",
+        "year": 2014,
+        "mood": "organic techno warmth",
+        "reason": "Your recent listening through Dominik Eulberg, Max Cooper and Super Flu places you squarely in the naturalistic, warm-toned end of techno — Stimming is a key figure in that world and Seta is a perfect entry point.",
+        "spotifyUrl": "https://open.spotify.com/search/Stimming%20Seta"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Tosca",
+        "title": "Honey",
+        "year": 2014,
+        "mood": "late night downtempo haze",
+        "reason": "Tosca are your most-played artist this week by a significant margin — Honey is from their album Go, which hasn't appeared in your recent play data, and it captures exactly the hazy, warm quality that's clearly drawing you to them right now.",
+        "spotifyUrl": "https://open.spotify.com/search/Tosca%20Honey"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Ben Lukas Boysen",
+        "title": "Nocturne",
+        "year": 2015,
+        "mood": "quiet electronic introspection",
+        "reason": "Ben Lukas Boysen is your second most-played artist this week — Nocturne is a deep cut from Gravity that hasn't shown up in your recent tracks and carries the same late-night, eyes-closed quality you're clearly seeking.",
+        "spotifyUrl": "https://open.spotify.com/search/Ben%20Lukas%20Boysen%20Nocturne"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Nils Frahm",
+        "title": "All Melody",
+        "year": 2018,
+        "mood": "piano-electronic transcendence",
+        "reason": "You've been playing Nils Frahm heavily this week across Spaces and Tripping with Nils Frahm — All Melody is the centrepiece title track from the album of the same name and represents a different, more layered side of his work.",
+        "spotifyUrl": "https://open.spotify.com/search/Nils%20Frahm%20All%20Melody"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Khruangbin",
+        "title": "Maria También",
+        "year": 2020,
+        "mood": "hazy global soul groove",
+        "reason": "Khruangbin are a strong signal this week and you've been deep in Con Todo El Mundo — María También is from Mordechai and has that same warm, globetrotting groove quality but with a different emotional temperature.",
+        "spotifyUrl": "https://open.spotify.com/search/Khruangbin%20Maria%20Tambi%C3%A9n"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Neal Francis",
+        "title": "Are You Happy",
+        "year": 2022,
+        "mood": "soulful piano funk",
+        "reason": "Neal Francis has 12 plays this week and you've been through Return to Zero — Are You Happy is from In Plain Sight, a different album that shows his funkier, more exuberant side and sits well alongside your Bill Withers listening.",
+        "spotifyUrl": "https://open.spotify.com/search/Neal%20Francis%20Are%20You%20Happy"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "A Winged Victory for the Sullen",
+        "title": "Requiem for the Static King Part One",
+        "year": 2013,
+        "mood": "solemn orchestral drift",
+        "reason": "A Winged Victory for the Sullen have 6 plays this week and you've been in The Undivided Five — this track is from their self-titled debut and has a more stripped, contemplative quality that suits the mood your listening is pointing toward.",
+        "spotifyUrl": "https://open.spotify.com/search/A%20Winged%20Victory%20for%20the%20Sullen%20Requiem%20for%20the%20Static%20King%20Part%20One"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Bill Evans",
+        "title": "Peace Piece",
+        "year": 1958,
+        "mood": "meditative solo piano",
+        "reason": "Bill Evans has 14 plays this month and your broader listening is clearly drawn toward piano and stillness right now — Peace Piece is a single sustained improvisation that feels like it was made for exactly the mood you're in this week.",
+        "spotifyUrl": "https://open.spotify.com/search/Bill%20Evans%20Peace%20Piece"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Crazy P",
+        "title": "Get Up",
+        "year": 2013,
+        "mood": "deep soulful house",
+        "reason": "Crazy P are appearing across your recent tracks this week with Changes and We Will F**k You Up — Get Up from the album Stop, Space, Return is a slower, deeper cut that fits the more soulful end of their catalogue.",
+        "spotifyUrl": "https://open.spotify.com/search/Crazy%20P%20Get%20Up"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Super Furry Animals",
+        "title": "The Man Don't Give a Fuck",
+        "year": 1996,
+        "mood": "euphoric psychedelic chaos",
+        "reason": "Super Furry Animals have 7 plays this week which is a surprise burst of energy in an otherwise contemplative listening week — this is their most unhinged and joyful track and earns its place as a counterweight to everything else on this list.",
+        "spotifyUrl": "https://open.spotify.com/search/Super%20Furry%20Animals%20The%20Man%20Don't%20Give%20a%20Fuck"
+      }
+    ]
+  },
+  "djSets": [
+    {
+      "artist": "Four Tet",
+      "setName": "WFMU Radio Session December 2001",
+      "url": "https://soundcloud.com/four-tet/wfmu-radio-session-december",
+      "createdAt": "2026-05-12T18:55:45Z",
+      "durationSeconds": 2038
+    },
+    {
+      "artist": "Burial & Four Tet",
+      "setName": "WFMU Radio Session December 2001",
+      "url": "https://soundcloud.com/four-tet/wfmu-radio-session-december",
+      "createdAt": "2026-05-12T18:55:45Z",
+      "durationSeconds": 2038
+    },
+    {
+      "artist": "Niconé",
+      "setName": "HMWL Podcast 430: Niconé & David Hasert (Kompakt / Get Physical / HMWL)",
+      "url": "https://soundcloud.com/hmwl/hmwl-podcast-430-nicone-david",
+      "createdAt": "2026-05-03T21:53:06Z",
+      "durationSeconds": 3150
+    },
+    {
+      "artist": "Caribou",
+      "setName": "Daphni - FOLD, London. Nov 22, 2025. 7hr DJ set",
+      "url": "https://soundcloud.com/caribouband/daphnifold",
+      "createdAt": "2026-03-26T10:47:06Z",
+      "durationSeconds": 25200
+    },
+    {
+      "artist": "Nathan Fake",
+      "setName": "Bleep Mix #316 - Nathan Fake",
+      "url": "https://soundcloud.com/bleep_bot/bleep-mix-316-nathan-fake",
+      "createdAt": "2026-03-18T15:24:30Z",
+      "durationSeconds": 3805
+    },
+    {
+      "artist": "Alec Troniq",
+      "setName": "Klausmarie b2b Alec Troniq - RAVIN' RAVIN' 2026 @ Sektor Evolution",
+      "url": "https://soundcloud.com/alec-troniq/klausmarie-alectroniq-ravinravin2026",
+      "createdAt": "2026-03-02T16:22:19Z",
+      "durationSeconds": 5606
+    },
+    {
+      "artist": "Caribou",
+      "setName": "Daphni - Essential Mix. Jan 2026",
+      "url": "https://soundcloud.com/caribouband/daphni-essential-mix-jan-2026",
+      "createdAt": "2026-02-26T09:42:51Z",
+      "durationSeconds": 7141
+    },
+    {
+      "artist": "Recondite",
+      "setName": "Recondite@TRAUM_Antwerp_JAN23_2026",
+      "url": "https://soundcloud.com/recondite_music/recondite",
+      "createdAt": "2026-02-25T09:07:46Z",
+      "durationSeconds": 5600
+    },
+    {
+      "artist": "Super Flu",
+      "setName": "Love Letter / February 2026",
+      "url": "https://soundcloud.com/super-flu-de/love-letter-february-2026",
+      "createdAt": "2026-02-17T17:58:05Z",
+      "durationSeconds": 3744
+    },
+    {
+      "artist": "Nathan Fake",
+      "setName": "Giulia Tess & Nathan Fake 040226",
+      "url": "https://soundcloud.com/user-202286394-991268468/giulia-tess-w-nathan-fake",
+      "createdAt": "2026-02-05T09:21:32Z",
+      "durationSeconds": 7216
+    }
+  ],
+  "spotifyPlaylistUrl": null
+}
