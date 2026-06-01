@@ -369,6 +369,10 @@
     var songStrings = songs.map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
     var albumStrings = albums.map(function (a) { return a.artist + ' — ' + a.title; }).join('\n');
 
+    var vaultStrings = songs.filter(function (s) { return s.tier === 'deep_catalog'; }).map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
+    var discoveryStrings = songs.filter(function (s) { return s.tier === 'all_time_discovery' || s.tier === 'recent_discovery'; }).map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
+    var rotationStrings = songs.filter(function (s) { return s.tier === 'current_mood'; }).map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
+
     var html =
       '<header class="page-header">' +
         '<p class="page-label">Weekly Music Discovery</p>' +
@@ -379,6 +383,10 @@
           spotifyHtml +
           '<button class="copy-tracks-btn" data-tracks="' + esc(songStrings) + '" onclick="copyTracks(this)">Copy songs</button>' +
           '<button class="copy-tracks-btn" data-tracks="' + esc(albumStrings) + '" onclick="copyTracks(this)">Copy albums</button>' +
+          '<span style="color:var(--muted); font-size:var(--fs-sm); margin:0 4px;">|</span>' +
+          '<button class="copy-tracks-btn" style="border-color:var(--accent-soft); color:var(--accent);" data-tracks="' + esc(vaultStrings) + '" onclick="copyTracks(this)">Copy The Vault</button>' +
+          '<button class="copy-tracks-btn" style="border-color:var(--accent-soft); color:var(--accent);" data-tracks="' + esc(discoveryStrings) + '" onclick="copyTracks(this)">Copy Discovery Inbox</button>' +
+          '<button class="copy-tracks-btn" style="border-color:var(--accent-soft); color:var(--accent);" data-tracks="' + esc(rotationStrings) + '" onclick="copyTracks(this)">Copy Current Rotation</button>' +
         '</div>' +
       '</header>' +
       tiersHtml +
