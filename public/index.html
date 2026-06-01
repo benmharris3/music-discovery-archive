@@ -19,6 +19,7 @@
       --accent-soft: rgba(106,155,255,0.18);
       --green-soft: rgba(126,217,87,0.15);
       --green: #7ed957;
+      --surface-2: rgba(255,255,255,0.06);
       --fs-xs: 10px; --fs-sm: 11px; --fs-md: 12px; --fs-base: 14px;
       --fs-lg: 16px; --fs-xl: 20px; --fs-2xl: 28px;
       --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
@@ -87,6 +88,17 @@
     }
     .spotify-link:hover { background: rgba(126,217,87,0.22); }
 
+    .copy-tracks-btn {
+      display: inline-flex; align-items: center;
+      margin-top: var(--sp-3);
+      padding: 5px 14px; border-radius: var(--r-sm);
+      background: var(--surface-2); border: 1px solid var(--card-border);
+      color: var(--muted-strong); font-size: var(--fs-sm); cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .copy-tracks-btn:hover { border-color: var(--card-border-hover); color: var(--text); }
+    .copy-tracks-btn:disabled { opacity: 0.6; cursor: default; }
+
     /* ── Tiers ───────────────────────────────────────── */
     .tier-section {
       max-width: 900px; margin: 0 auto var(--sp-7);
@@ -135,14 +147,32 @@
     }
     .pick-title:hover { color: var(--accent); }
     .pick-meta { font-size: var(--fs-base); color: var(--muted); }
+    .pick-tags { display: flex; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-2); flex-wrap: wrap; }
     .pick-mood {
       display: inline-block; font-size: var(--fs-sm); padding: 3px 9px;
       background: var(--accent-soft); color: var(--accent);
-      border-radius: 999px; font-weight: 500; margin-bottom: var(--sp-2);
+      border-radius: 999px; font-weight: 500;
     }
     .pick-reason {
       font-size: var(--fs-base); color: var(--muted-strong); margin: 0; line-height: 1.55;
     }
+    .pick-feedback { display: flex; align-items: center; gap: 6px; margin-top: 10px; }
+    .pick-thumb {
+      appearance: none; background: var(--accent-soft);
+      border: 1px solid var(--divider); border-radius: 999px;
+      padding: 4px 10px; font-size: var(--fs-base); line-height: 1;
+      cursor: pointer; transition: transform 0.08s ease, background 0.15s ease;
+      color: var(--text);
+    }
+    .pick-thumb:hover { background: var(--divider); border-color: var(--card-border-hover); }
+    .pick-thumb:active { transform: scale(0.94); }
+    .pick-thumb[data-state="active-up"] { background: rgba(126,217,87,0.18); border-color: rgba(126,217,87,0.5); }
+    .pick-thumb[data-state="active-down"] { background: rgba(255,107,94,0.18); border-color: rgba(255,107,94,0.5); }
+    .pick-thumb[disabled] { cursor: default; opacity: 0.85; }
+    .pick-feedback-status {
+      font-size: var(--fs-md); color: var(--muted); font-style: italic;
+    }
+    .pick-feedback-status[data-tone="error"] { color: #ff6b5e; font-style: normal; }
 
     /* ── DJ Sets ─────────────────────────────────────── */
     .dj-sets-list { list-style: none; margin: 0; padding: 0; }
@@ -159,6 +189,9 @@
     }
     .dj-set-title:hover { color: var(--accent); }
     .dj-set-meta { font-size: var(--fs-base); color: var(--muted); }
+    .dj-set-actions {
+      display: flex; align-items: center; gap: var(--sp-3); flex-shrink: 0;
+    }
     .dj-set-link {
       font-size: var(--fs-sm); font-weight: 500;
       color: var(--accent); text-decoration: none; opacity: 0.75;
@@ -166,6 +199,7 @@
       border-radius: 999px; white-space: nowrap; flex-shrink: 0;
     }
     .dj-set-link:hover { opacity: 1; border-color: var(--accent); }
+    .dj-set-feedback-status { font-size: var(--fs-sm); }
 
     /* ── States ──────────────────────────────────────── */
     .state {
@@ -195,6 +229,16 @@
 
 <script>
 (function () {
+  window.copyTracks = function (btn) {
+    var tracks = btn.getAttribute('data-tracks');
+    navigator.clipboard.writeText(tracks).then(function () {
+      var orig = btn.textContent;
+      btn.textContent = 'Copied ✓';
+      btn.disabled = true;
+      setTimeout(function () { btn.textContent = orig; btn.disabled = false; }, 2000);
+    });
+  };
+
   var TIER_META = {
     deep_catalog:       { label: 'All-Time Bedrock',                 desc: 'Artists you\'ve returned to for years — the vault.' },
     all_time_discovery: { label: 'Discovery — All-Time Adjacent',     desc: 'What you\'d probably love, seeded by your all-time taste.' },
@@ -239,13 +283,23 @@
   function renderPick(p) {
     var spotifyHref = p.spotifyUrl ? ' href="' + esc(p.spotifyUrl) + '" target="_blank" rel="noopener"' : '';
     var tag = p.spotifyUrl ? 'a' : 'span';
-    return '<article class="pick">' +
+    return '<article class="pick" ' +
+      'data-feedback-kind="' + esc(p.kind) + '" ' +
+      'data-feedback-artist="' + esc(p.artist) + '" ' +
+      'data-feedback-title="' + esc(p.title) + '">' +
       '<div class="pick-head">' +
         '<' + tag + ' class="pick-title"' + spotifyHref + '>' + esc(p.title) + '</' + tag + '>' +
         '<span class="pick-meta">' + esc(p.artist) + (p.year ? ' · ' + esc(String(p.year)) : '') + '</span>' +
       '</div>' +
-      (p.mood ? '<span class="pick-mood">' + esc(p.mood) + '</span>' : '') +
+      '<div class="pick-tags">' +
+        (p.mood ? '<span class="pick-mood">' + esc(p.mood) + '</span>' : '') +
+      '</div>' +
       '<p class="pick-reason">' + esc(p.reason) + '</p>' +
+      '<div class="pick-feedback" role="group" aria-label="Rate this pick">' +
+        '<button type="button" class="pick-thumb pick-thumb-up" data-sentiment="up" aria-label="Like">👍</button> ' +
+        '<button type="button" class="pick-thumb pick-thumb-down" data-sentiment="down" aria-label="Dislike">👎</button>' +
+        '<span class="pick-feedback-status" aria-live="polite"></span>' +
+      '</div>' +
     '</article>';
   }
 
@@ -270,12 +324,23 @@
     if (!djSets || !djSets.length) return '';
     var items = djSets.map(function (set) {
       var dur = set.durationSeconds ? formatDuration(set.durationSeconds) : null;
-      return '<li class="dj-set">' +
+      var durText = dur ? ' · ' + esc(dur) : '';
+      return '<li class="dj-set" ' +
+        'data-feedback-kind="djset" ' +
+        'data-feedback-artist="' + esc(set.artist) + '" ' +
+        'data-feedback-title="' + esc(set.setName) + '">' +
         '<div class="dj-set-main">' +
           '<a class="dj-set-title" href="' + esc(set.url) + '" target="_blank" rel="noopener">' + esc(set.setName) + '</a>' +
-          '<span class="dj-set-meta">' + esc(set.artist) + ' · ' + esc(formatShortDate(set.createdAt)) + (dur ? ' · ' + esc(dur) : '') + '</span>' +
+          '<span class="dj-set-meta">' + esc(set.artist) + ' · ' + esc(formatShortDate(set.createdAt)) + esc(durText) + '</span>' +
         '</div>' +
-        '<a class="dj-set-link" href="' + esc(set.url) + '" target="_blank" rel="noopener">SoundCloud ↗</a>' +
+        '<div class="dj-set-actions">' +
+          '<div class="pick-feedback" role="group" aria-label="Rate this set">' +
+            '<button type="button" class="pick-thumb pick-thumb-up dj-thumb" data-sentiment="up" aria-label="Like">👍</button> ' +
+            '<button type="button" class="pick-thumb pick-thumb-down dj-thumb" data-sentiment="down" aria-label="Dislike">👎</button>' +
+            '<span class="pick-feedback-status dj-set-feedback-status" aria-live="polite"></span>' +
+          '</div>' +
+          '<a class="dj-set-link" href="' + esc(set.url) + '" target="_blank" rel="noopener">SoundCloud ↗</a>' +
+        '</div>' +
       '</li>';
     }).join('');
     return '<section class="tier-section" style="--enter-i:' + enterIndex + '">' +
@@ -301,22 +366,69 @@
       ? '<a class="spotify-link" href="' + esc(snapshot.spotifyPlaylistUrl) + '" target="_blank" rel="noopener">▶ Open in Spotify</a>'
       : '';
 
+    var songStrings = songs.map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
+
     var html =
       '<header class="page-header">' +
         '<p class="page-label">Weekly Music Discovery</p>' +
         '<h1 class="page-title">Your week in music</h1>' +
         '<p class="page-date">' + esc(formatLongDate(date)) + '</p>' +
         '<p class="page-stats">' + albums.length + ' albums · ' + songs.length + ' songs · 4 perspectives' + (djSets.length ? ' · ' + djSets.length + ' DJ sets' : '') + '</p>' +
-        spotifyHtml +
+        '<div style="display:flex; gap:var(--sp-2); align-items:center; flex-wrap:wrap;">' +
+          spotifyHtml +
+          '<button class="copy-tracks-btn" data-tracks="' + esc(songStrings) + '" onclick="copyTracks(this)">Copy song list</button>' +
+        '</div>' +
       '</header>' +
       tiersHtml +
       renderDjSection(djSets, TIER_ORDER.length);
 
     document.getElementById('root').innerHTML = html;
 
+    attachFeedbackHandlers();
+
     var footer = document.getElementById('footer');
     footer.style.display = '';
     footer.textContent = 'Generated ' + formatShortDate(snapshot.generatedAt);
+  }
+
+  function attachFeedbackHandlers() {
+    var ENDPOINT = 'http://127.0.0.1:3031/music/feedback';
+
+    function attach(el, statusSelector) {
+      var kind    = el.getAttribute('data-feedback-kind');
+      var artist  = el.getAttribute('data-feedback-artist');
+      var title   = el.getAttribute('data-feedback-title');
+      var status  = el.querySelector(statusSelector);
+      el.querySelectorAll('.pick-thumb').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var sentiment = btn.getAttribute('data-sentiment');
+          el.querySelectorAll('.pick-thumb').forEach(function (b) { b.disabled = true; });
+          if (status) status.textContent = 'Saving\u2026';
+          fetch(ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ kind: kind, artist: artist, title: title, sentiment: sentiment }),
+          })
+            .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+            .then(function () {
+              el.querySelectorAll('.pick-thumb').forEach(function (b) { b.removeAttribute('data-state'); });
+              btn.setAttribute('data-state', 'active-' + sentiment);
+              if (status) status.textContent = sentiment === 'up' ? 'Liked' : 'Disliked';
+            })
+            .catch(function () {
+              el.querySelectorAll('.pick-thumb').forEach(function (b) { b.disabled = false; });
+              if (status) { status.textContent = 'Feedback server offline'; status.setAttribute('data-tone', 'error'); }
+            });
+        });
+      });
+    }
+
+    document.querySelectorAll('.pick').forEach(function (el) {
+      attach(el, '.pick-feedback-status');
+    });
+    document.querySelectorAll('.dj-set[data-feedback-kind]').forEach(function (el) {
+      attach(el, '.dj-set-feedback-status');
+    });
   }
 
   function setLoading() {
