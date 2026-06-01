@@ -367,6 +367,7 @@
       : '';
 
     var songStrings = songs.map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
+    var albumStrings = albums.map(function (a) { return a.artist + ' — ' + a.title; }).join('\n');
 
     var html =
       '<header class="page-header">' +
@@ -376,7 +377,8 @@
         '<p class="page-stats">' + albums.length + ' albums · ' + songs.length + ' songs · 4 perspectives' + (djSets.length ? ' · ' + djSets.length + ' DJ sets' : '') + '</p>' +
         '<div style="display:flex; gap:var(--sp-2); align-items:center; flex-wrap:wrap;">' +
           spotifyHtml +
-          '<button class="copy-tracks-btn" data-tracks="' + esc(songStrings) + '" onclick="copyTracks(this)">Copy song list</button>' +
+          '<button class="copy-tracks-btn" data-tracks="' + esc(songStrings) + '" onclick="copyTracks(this)">Copy songs</button>' +
+          '<button class="copy-tracks-btn" data-tracks="' + esc(albumStrings) + '" onclick="copyTracks(this)">Copy albums</button>' +
         '</div>' +
       '</header>' +
       tiersHtml +
