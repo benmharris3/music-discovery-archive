@@ -518,13 +518,33 @@
     loadDate(d);
   });
 
+  function getWeekIdentifier(dateStr) {
+    try {
+      var date = new Date(dateStr + 'T12:00:00');
+      var d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+      var dayNum = d.getUTCDay() || 7;
+      d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+      var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+      var weekNo = Math.ceil((((d - yearStart) / 86400000) + 1)/7);
+      return d.getUTCFullYear() + '-W' + String(weekNo).padStart(2, '0');
+    } catch (e) {
+      return dateStr;
+    }
+  }
+
   fetch('data/index.json')
     .then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     })
     .then(function (dates) {
-      allDates = dates;
+      var seenWeeks = {};
+      allDates = dates.filter(function (dStr) {
+        var weekId = getWeekIdentifier(dStr);
+        if (seenWeeks[weekId]) return false;
+        seenWeeks[weekId] = true;
+        return true;
+      });
       buildSelect();
       var requested = getDateFromUrl();
       loadDate(requested && allDates.includes(requested) ? requested : allDates[0]);
