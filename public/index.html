@@ -241,11 +241,13 @@
 
   var TIER_META = {
     deep_catalog:       { label: 'All-Time Bedrock',                 desc: 'Artists you\'ve returned to for years — the vault.' },
+    deep_vault:         { label: 'Deep Vault (10+ Years)',           desc: 'Pure nostalgia: artists you loved deeply 10+ years ago but may not have revisited recently.' },
+    recent_vault:       { label: 'Recent Vault (3-10 Years)',         desc: 'Familiar favorites from your medium-term past.' },
     all_time_discovery: { label: 'Discovery — All-Time Adjacent',     desc: 'What you\'d probably love, seeded by your all-time taste.' },
     recent_discovery:   { label: 'Discovery — This Year\'s Direction', desc: 'What you\'d probably love, seeded by where you are right now.' },
     current_mood:       { label: 'Right Now',                         desc: 'The sharpest current signal — what you\'re actually playing this week.' },
   };
-  var TIER_ORDER = ['deep_catalog', 'all_time_discovery', 'recent_discovery', 'current_mood'];
+  var TIER_ORDER = ['deep_catalog', 'deep_vault', 'recent_vault', 'all_time_discovery', 'recent_discovery', 'current_mood'];
 
   var allDates = [];
   var currentDate = null;
@@ -358,8 +360,13 @@
     var djSets = snapshot.djSets || [];
     var date = snapshot.date;
 
-    var tiersHtml = TIER_ORDER.map(function (tier, i) {
-      return renderTierSection(tier, albums, songs, i);
+    var renderedIndex = 0;
+    var tiersHtml = TIER_ORDER.map(function (tier) {
+      var html = renderTierSection(tier, albums, songs, renderedIndex);
+      if (html) {
+        renderedIndex++;
+      }
+      return html;
     }).join('');
 
     var spotifyHtml = snapshot.spotifyPlaylistUrl
@@ -369,7 +376,9 @@
     var songStrings = songs.map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
     var albumStrings = albums.map(function (a) { return a.artist + ' — ' + a.title; }).join('\n');
 
-    var vaultStrings = songs.filter(function (s) { return s.tier === 'deep_catalog'; }).map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
+    var vaultStrings = songs.filter(function (s) {
+      return s.tier === 'deep_catalog' || s.tier === 'deep_vault' || s.tier === 'recent_vault';
+    }).map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
     var discoveryStrings = songs.filter(function (s) { return s.tier === 'all_time_discovery' || s.tier === 'recent_discovery'; }).map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
     var rotationStrings = songs.filter(function (s) { return s.tier === 'current_mood'; }).map(function (s) { return s.artist + ' — ' + s.title; }).join('\n');
 
