@@ -1,0 +1,647 @@
+{
+  "date": "2026-10-24",
+  "generatedAt": "2026-10-24T06:32:09.701Z",
+  "picks": {
+    "albums": [
+      {
+        "kind": "album",
+        "tier": "deep_vault",
+        "artist": "Daft Punk",
+        "title": "Discovery",
+        "year": 2001,
+        "mood": "euphoric electronic pop",
+        "reason": "With Veridis Quo, Digital Love, and One More Time among your all-time most-played tracks, Discovery is the beating heart of your Daft Punk obsession — it deserves a full revisit.",
+        "spotifyUrl": "https://open.spotify.com/search/Daft%20Punk%20Discovery"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_vault",
+        "artist": "Radiohead",
+        "title": "OK Computer",
+        "year": 1997,
+        "mood": "anxious guitar art-rock",
+        "reason": "Reckoner and True Love Waits are deep in your all-time top plays, and OK Computer is the Radiohead album that started it all — a record worth returning to properly.",
+        "spotifyUrl": "https://open.spotify.com/search/Radiohead%20OK%20Computer"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_vault",
+        "artist": "Air",
+        "title": "10 000 Hz Legend",
+        "year": 2001,
+        "mood": "dreamy French electronic",
+        "reason": "Sexy Boy and La femme d'argent are in your all-time top 50 tracks, and this underrated Air record goes deeper into the cosmic, slightly eerie space they do so well.",
+        "spotifyUrl": "https://open.spotify.com/search/Air%2010%20000%20Hz%20Legend"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_vault",
+        "artist": "Leftfield",
+        "title": "Rhythm and Stealth",
+        "year": 1999,
+        "mood": "deep pulsing electronica",
+        "reason": "Release the Pressure is your fourth most-played track of all time — Rhythm and Stealth is Leftfield's overlooked second album and it's dense, hypnotic, and worthy of your attention.",
+        "spotifyUrl": "https://open.spotify.com/search/Leftfield%20Rhythm%20and%20Stealth"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_vault",
+        "artist": "The Killers",
+        "title": "Sam's Town",
+        "year": 2006,
+        "mood": "epic heartland rock",
+        "reason": "A Dustland Fairytale and All These Things That I've Done are both in your all-time top 50 tracks, and Sam's Town is where The Killers swung for the grandest emotional register.",
+        "spotifyUrl": "https://open.spotify.com/search/The%20Killers%20Sam's%20Town"
+      },
+      {
+        "kind": "album",
+        "tier": "deep_vault",
+        "artist": "Massive Attack",
+        "title": "Mezzanine",
+        "year": 1998,
+        "mood": "dark brooding trip-hop",
+        "reason": "Massive Attack sit firmly in your all-time top artists, and Mezzanine is their darkest, most cinematic record — one that rewards returning to in a way few albums do.",
+        "spotifyUrl": "https://open.spotify.com/search/Massive%20Attack%20Mezzanine"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_vault",
+        "artist": "James Blake",
+        "title": "The Colour in Anything",
+        "year": 2016,
+        "mood": "sparse emotional R&B",
+        "reason": "James Blake has 637 all-time plays and Postpone is your most-played track ever — this sprawling 2016 album is where his songwriting reached its most achingly beautiful.",
+        "spotifyUrl": "https://open.spotify.com/search/James%20Blake%20The%20Colour%20in%20Anything"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_vault",
+        "artist": "Bonobo",
+        "title": "Migration",
+        "year": 2017,
+        "mood": "lush cinematic downtempo",
+        "reason": "Bonobo is deep in your all-time and recent listening, and Migration is arguably their finest full statement — expansive, warm, and full of the textured depth you clearly love.",
+        "spotifyUrl": "https://open.spotify.com/search/Bonobo%20Migration"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_vault",
+        "artist": "Moderat",
+        "title": "II",
+        "year": 2013,
+        "mood": "melodic electronic melancholy",
+        "reason": "Rusty Nails is in your all-time top 50 tracks, and Moderat's second album is where the Apparat/Modeselektor project hit its most emotionally powerful stride.",
+        "spotifyUrl": "https://open.spotify.com/search/Moderat%20II"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_vault",
+        "artist": "Trentemøller",
+        "title": "The Last Resort",
+        "year": 2006,
+        "mood": "cinematic dark electronica",
+        "reason": "Trentemøller has 561 all-time plays and multiple albums in your history — The Last Resort is where it all began and it remains a landmark of moody, atmospheric electronic music.",
+        "spotifyUrl": "https://open.spotify.com/search/Trentem%C3%B8ller%20The%20Last%20Resort"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_vault",
+        "artist": "Max Cooper",
+        "title": "Emergence",
+        "year": 2016,
+        "mood": "conceptual cerebral techno",
+        "reason": "Max Cooper has 484 all-time plays and 28 plays this past year alone, and Emergence is his most complete album-length statement — a record built around ideas as much as sound.",
+        "spotifyUrl": "https://open.spotify.com/search/Max%20Cooper%20Emergence"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_vault",
+        "artist": "Four Tet",
+        "title": "There Is Love in You",
+        "year": 2010,
+        "mood": "warm glitchy folktronica",
+        "reason": "Four Tet has featured in your recent 12 months of listening, and There Is Love in You — with its slow-building emotion and intricate warmth — is his most beloved and revisitable album.",
+        "spotifyUrl": "https://open.spotify.com/search/Four%20Tet%20There%20Is%20Love%20in%20You"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Gold Panda",
+        "title": "Lucky Shiner",
+        "year": 2010,
+        "mood": "nostalgic lo-fi electronic",
+        "reason": "If you love the emotional warmth of Four Tet and the textural intimacy of Bonobo, Gold Panda's debut is a cult classic in the same lane — small, beautiful, and deeply affecting.",
+        "spotifyUrl": "https://open.spotify.com/search/Gold%20Panda%20Lucky%20Shiner"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Ulrich Schnauss",
+        "title": "Far Away Trains Passing By",
+        "year": 2001,
+        "mood": "blissful shoegaze electronica",
+        "reason": "A natural peer to your love of Moby, Boards of Canada and Röyksopp — Schnauss makes lush, overwhelmingly beautiful electronic music that sounds like a memory you can't quite place.",
+        "spotifyUrl": "https://open.spotify.com/search/Ulrich%20Schnauss%20Far%20Away%20Trains%20Passing%20By"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Submotion Orchestra",
+        "title": "Colour Theory",
+        "year": 2014,
+        "mood": "soulful cinematic downtempo",
+        "reason": "If you love Massive Attack's orchestral side and James Blake's emotional depth, Submotion Orchestra sit right in that zone — trip-hop structures with live instrumentation and a remarkable vocalist.",
+        "spotifyUrl": "https://open.spotify.com/search/Submotion%20Orchestra%20Colour%20Theory"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Ame",
+        "title": "DJ-Kicks",
+        "year": 2012,
+        "mood": "deep hypnotic house",
+        "reason": "Given your love of Justice, Orbital and the deeper end of electronic music, this DJ-Kicks entry from Berlin duo Âme is a masterclass in deep, soulful, slow-burning house and techno.",
+        "spotifyUrl": "https://open.spotify.com/search/Ame%20DJ-Kicks"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "Actress",
+        "title": "Ghettoville",
+        "year": 2014,
+        "mood": "decayed abstract electronica",
+        "reason": "If Aphex Twin's more abrasive side and Modeselektor's experimental tendencies speak to you, Actress's Ghettoville is a desolate, hypnotic masterpiece you should know — darker and stranger than almost anything.",
+        "spotifyUrl": "https://open.spotify.com/search/Actress%20Ghettoville"
+      },
+      {
+        "kind": "album",
+        "tier": "all_time_discovery",
+        "artist": "The Field",
+        "title": "From Here We Go Sublime",
+        "year": 2007,
+        "mood": "blissful hypnotic minimalism",
+        "reason": "Fans of Daft Punk's repetitive euphoria and Orbital's long-form builds consistently fall hard for The Field — this debut is one of the great minimalist electronic albums of the 2000s.",
+        "spotifyUrl": "https://open.spotify.com/search/The%20Field%20From%20Here%20We%20Go%20Sublime"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Makaya McCraven",
+        "title": "Universal Beings",
+        "year": 2018,
+        "mood": "organic jazz-meets-beat",
+        "reason": "Your recent listening arc through Portico Quartet, Alabaster Deplume and Oscar Peterson points toward adventurous jazz — McCraven's live-assembled collage of global sessions is one of the decade's most exciting jazz records.",
+        "spotifyUrl": "https://open.spotify.com/search/Makaya%20McCraven%20Universal%20Beings"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Anchorsong",
+        "title": "Ceremonial",
+        "year": 2015,
+        "mood": "layered global downtempo",
+        "reason": "Given your deep recent runs through Khruangbin and O'Flynn's textured global sounds, Anchorsong's Ceremonial — built live on an MPC with world-music flavours — should feel immediately right.",
+        "spotifyUrl": "https://open.spotify.com/search/Anchorsong%20Ceremonial"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Nduduzo Makhathini",
+        "title": "In the Spirit of Ntu",
+        "year": 2022,
+        "mood": "spiritual African jazz",
+        "reason": "Your recent listening covers Sault, Charles Bradley, Syl Johnson and Curtis Mayfield — Makhathini's Blue Note debut is a deeply soulful South African jazz record that carries real emotional weight.",
+        "spotifyUrl": "https://open.spotify.com/search/Nduduzo%20Makhathini%20In%20the%20Spirit%20of%20Ntu"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Teebs",
+        "title": "Ardour",
+        "year": 2012,
+        "mood": "hazy beatific ambient beat",
+        "reason": "With Bibio, Ben Lukas Boysen and Brambles all heavy in your recent listening, Teebs's Ardour — soft, smeared, painterly beat music — sits beautifully in that same gentle, introspective space.",
+        "spotifyUrl": "https://open.spotify.com/search/Teebs%20Ardour"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Catching Flies",
+        "title": "Honeytrap",
+        "year": 2016,
+        "mood": "warm lo-fi soul beats",
+        "reason": "Your recent mix of Romare, Nightmares on Wax and St Germain points to warm, soulful, sample-based music — Catching Flies makes exactly that, with a particularly lush, Sunday-morning feel.",
+        "spotifyUrl": "https://open.spotify.com/search/Catching%20Flies%20Honeytrap"
+      },
+      {
+        "kind": "album",
+        "tier": "recent_discovery",
+        "artist": "Hnny",
+        "title": "Bbbbbb",
+        "year": 2013,
+        "mood": "intimate minimal house",
+        "reason": "Given your recent listening to Axel Boman, Folamour and the deeper end of house, Swedish producer Hnny's Bbbbbb is a cult favourite in that scene — fragile, intimate and deeply emotive.",
+        "spotifyUrl": "https://open.spotify.com/search/Hnny%20Bbbbbb"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "The Avalanches",
+        "title": "Since I Left You",
+        "year": 2000,
+        "mood": "euphoric collage pop",
+        "reason": "You've played The Avalanches 21 times this month alone — go back to where it all started with Since I Left You, the sample-collage masterpiece that made them legends.",
+        "spotifyUrl": "https://open.spotify.com/search/The%20Avalanches%20Since%20I%20Left%20You"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Romare",
+        "title": "Love Songs: Part Two",
+        "year": 2016,
+        "mood": "soulful collage electronica",
+        "reason": "You're deep in Romare right now with multiple albums playing this week — Love Songs: Part Two is arguably his warmest, most cohesive statement and a natural next stop.",
+        "spotifyUrl": "https://open.spotify.com/search/Romare%20Love%20Songs%3A%20Part%20Two"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Radiohead",
+        "title": "The Bends",
+        "year": 1995,
+        "mood": "raw melodic alt-rock",
+        "reason": "You've been through In Rainbows track by track this week — The Bends is the emotional rawer sibling, and after that kind of deep dive it tends to hit even harder.",
+        "spotifyUrl": "https://open.spotify.com/search/Radiohead%20The%20Bends"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Jimi Hendrix",
+        "title": "Smash Hits",
+        "year": 1969,
+        "mood": "electrifying blues-rock",
+        "reason": "Jimi Hendrix led your plays last month with 41 spins across multiple albums — Smash Hits collects the most essential moments into a single euphoric rush that fits wherever you are right now.",
+        "spotifyUrl": "https://open.spotify.com/search/Jimi%20Hendrix%20Smash%20Hits"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Bibio",
+        "title": "Phantom Brickworks",
+        "year": 2017,
+        "mood": "misty ambient drift",
+        "reason": "Bibio has been heavy in your current rotation, and Phantom Brickworks is his most purely ambient record — long, slow, atmospheric pieces that fit a contemplative, inward mood perfectly.",
+        "spotifyUrl": "https://open.spotify.com/search/Bibio%20Phantom%20Brickworks"
+      },
+      {
+        "kind": "album",
+        "tier": "current_mood",
+        "artist": "Frank Ocean",
+        "title": "Nostalgia, Ultra",
+        "year": 2011,
+        "mood": "hazy introspective R&B",
+        "reason": "Frank Ocean has been in heavy rotation this past month — Nostalgia, Ultra is the raw, mixtape-format beginning where his voice and emotional vision first fully came together.",
+        "spotifyUrl": "https://open.spotify.com/search/Frank%20Ocean%20Nostalgia%2C%20Ultra"
+      }
+    ],
+    "songs": [
+      {
+        "kind": "song",
+        "tier": "deep_vault",
+        "artist": "Orbital",
+        "title": "Remind",
+        "year": 2001,
+        "mood": "euphoric melodic techno",
+        "reason": "Orbital have 777 all-time plays and Don't Stop Me is deep in your all-time top tracks — Remind, from The Blue Album's spiritual successor, is an overlooked gem of uplifting electronic music.",
+        "spotifyUrl": "https://open.spotify.com/search/Orbital%20Remind"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_vault",
+        "artist": "Pink Floyd",
+        "title": "Comfortably Numb",
+        "year": 1979,
+        "mood": "epic yearning rock",
+        "reason": "Pink Floyd have 1,199 all-time plays and you've loved them for years — Comfortably Numb is one of rock's great emotional peaks and always worth returning to.",
+        "spotifyUrl": "https://open.spotify.com/search/Pink%20Floyd%20Comfortably%20Numb"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_vault",
+        "artist": "Röyksopp",
+        "title": "Eple",
+        "year": 2001,
+        "mood": "warm morning electronica",
+        "reason": "Röyksopp have over 1,000 all-time plays and The Girl and the Robot is in your top 50 tracks — Eple is their most iconic moment, a soft euphoric pulse of a song.",
+        "spotifyUrl": "https://open.spotify.com/search/R%C3%B6yksopp%20Eple"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_vault",
+        "artist": "The Shins",
+        "title": "New Slang",
+        "year": 2001,
+        "mood": "tender indie folk-pop",
+        "reason": "The Shins have 546 all-time plays, placing them firmly in your deep history — New Slang is one of those perfect, quiet songs that hits differently after years away from it.",
+        "spotifyUrl": "https://open.spotify.com/search/The%20Shins%20New%20Slang"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_vault",
+        "artist": "Justice",
+        "title": "Civilization",
+        "year": 2011,
+        "mood": "anthemic electronic grandeur",
+        "reason": "Justice have 780 all-time plays and Genesis and Phantom Pt. II are in your top tracks — Civilization is their most epic, operatic moment and a perfect deep-vault return.",
+        "spotifyUrl": "https://open.spotify.com/search/Justice%20Civilization"
+      },
+      {
+        "kind": "song",
+        "tier": "deep_vault",
+        "artist": "Moby",
+        "title": "Porcelain",
+        "year": 1999,
+        "mood": "melancholic electronic beauty",
+        "reason": "Moby has 551 all-time plays, and Porcelain is the emotional centrepiece of Play — a song of quiet devastation that you probably haven't sat with properly in years.",
+        "spotifyUrl": "https://open.spotify.com/search/Moby%20Porcelain"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_vault",
+        "artist": "Maribou State",
+        "title": "Nervous Tics",
+        "year": 2018,
+        "mood": "hazy euphoric downtempo",
+        "reason": "Maribou State have 436 all-time plays and Beginner's Luck is in your all-time top tracks — Nervous Tics from Portraits is their most hypnotic, groove-heavy moment.",
+        "spotifyUrl": "https://open.spotify.com/search/Maribou%20State%20Nervous%20Tics"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_vault",
+        "artist": "Bonobo",
+        "title": "Linked",
+        "year": 2017,
+        "mood": "lush orchestral downtempo",
+        "reason": "Bonobo are deep in your recent listening with 45 plays this year — Linked from Migration is one of his most emotionally swelling, cinematically gorgeous tracks.",
+        "spotifyUrl": "https://open.spotify.com/search/Bonobo%20Linked"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_vault",
+        "artist": "Apparat",
+        "title": "Goodbye",
+        "year": 2011,
+        "mood": "tender electronic yearning",
+        "reason": "Apparat has 38 plays in the last year and A Hum Of Maybe is one of your most-played recent albums — Goodbye, from The Devil's Walk, is his most heartbreaking vocal moment.",
+        "spotifyUrl": "https://open.spotify.com/search/Apparat%20Goodbye"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_vault",
+        "artist": "Jon Hopkins",
+        "title": "Breathe This Air",
+        "year": 2013,
+        "mood": "euphoric build release",
+        "reason": "Given your love of Max Cooper and the more emotive end of electronic music, Hopkins's Breathe This Air from Immunity is a track of genuinely transcendent build and release.",
+        "spotifyUrl": "https://open.spotify.com/search/Jon%20Hopkins%20Breathe%20This%20Air"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_vault",
+        "artist": "Nils Frahm",
+        "title": "All Melody",
+        "year": 2018,
+        "mood": "sweeping piano-led odyssey",
+        "reason": "Nils Frahm has 64 plays in the last year — the title track from All Melody is a vast, layered, deeply emotional piece that showcases everything that makes him so compelling.",
+        "spotifyUrl": "https://open.spotify.com/search/Nils%20Frahm%20All%20Melody"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_vault",
+        "artist": "Ólafur Arnalds",
+        "title": "Near Light",
+        "year": 2013,
+        "mood": "fragile ambient heartbreak",
+        "reason": "Ólafur Arnalds has 25 plays in the last year, and Near Light is one of his most quietly devastating tracks — strings, piano and just enough electronics to make it feel eternal.",
+        "spotifyUrl": "https://open.spotify.com/search/%C3%93lafur%20Arnalds%20Near%20Light"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Tycho",
+        "title": "A Walk",
+        "year": 2011,
+        "mood": "hazy nostalgic ambient pop",
+        "reason": "If you love the warm, golden-afternoon feeling of Air and early Röyksopp, Tycho's A Walk — all soft reverb, gentle melody and oceanic drift — should feel like a perfect discovery.",
+        "spotifyUrl": "https://open.spotify.com/search/Tycho%20A%20Walk"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Susumu Yokota",
+        "title": "Sakura",
+        "year": 1999,
+        "mood": "ethereal ambient electronica",
+        "reason": "A peer of Aphex Twin and Plaid in the abstract electronic world, Yokota's Sakura is a staggeringly beautiful track built from cherry-blossom samples — utterly unlike anything else.",
+        "spotifyUrl": "https://open.spotify.com/search/Susumu%20Yokota%20Sakura"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Erlend Øye",
+        "title": "Sudden Rush",
+        "year": 2003,
+        "mood": "intimate indie-electronic pop",
+        "reason": "If you love the gentle melodic intelligence of The Shins and the electronic warmth of Röyksopp, Erlend Øye's Sudden Rush is a cult favourite — soft, witty and quietly perfect.",
+        "spotifyUrl": "https://open.spotify.com/search/Erlend%20%C3%98ye%20Sudden%20Rush"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Ame",
+        "title": "Rej",
+        "year": 2005,
+        "mood": "euphoric deep house peak",
+        "reason": "One of the most loved tracks in deep house history, Rej sits right at the intersection of your love for Orbital's long builds and Justice's propulsive energy — it's essential.",
+        "spotifyUrl": "https://open.spotify.com/search/Ame%20Rej"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Burial",
+        "title": "Shell of Light",
+        "year": 2007,
+        "mood": "haunted urban nocturnal",
+        "reason": "Given your love of Massive Attack's darkest moments and James Blake's spectral production, Burial's Shell of Light is one of the defining tracks of UK electronic music — ghostly and utterly absorbing.",
+        "spotifyUrl": "https://open.spotify.com/search/Burial%20Shell%20of%20Light"
+      },
+      {
+        "kind": "song",
+        "tier": "all_time_discovery",
+        "artist": "Caribou",
+        "title": "Sun",
+        "year": 2014,
+        "mood": "blissful psychedelic pop",
+        "reason": "A peer to MGMT, The Avalanches and the more psychedelic end of your taste, Caribou's Sun from Our Love is one of the most purely joyful electronic pop tracks of the last decade.",
+        "spotifyUrl": "https://open.spotify.com/search/Caribou%20Sun"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Hermanos Gutiérrez",
+        "title": "El Bueno y El Malo",
+        "year": 2021,
+        "mood": "dusty meditative guitar",
+        "reason": "You've been listening to Hermanos Gutiérrez recently alongside Khruangbin — El Bueno y El Malo is their most hypnotic track, a slow-burning instrumental that feels like desert heat.",
+        "spotifyUrl": "https://open.spotify.com/search/Hermanos%20Guti%C3%A9rrez%20El%20Bueno%20y%20El%20Malo"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Jex Opolis",
+        "title": "Good Time Joel",
+        "year": 2013,
+        "mood": "blissful deep house warmth",
+        "reason": "Your recent arc through Axel Boman, Folamour and Hnny points to warm, personal deep house — Good Time Joel is a beloved track in that community, built purely on feel and warmth.",
+        "spotifyUrl": "https://open.spotify.com/search/Jex%20Opolis%20Good%20Time%20Joel"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Jordan Rakei",
+        "title": "Clouds",
+        "year": 2016,
+        "mood": "introspective soulful neo-jazz",
+        "reason": "With Portico Quartet, Alabaster Deplume and Frank Ocean all in heavy rotation, Jordan Rakei's Clouds sits right in that space — soulful, introspective and built around voice and texture.",
+        "spotifyUrl": "https://open.spotify.com/search/Jordan%20Rakei%20Clouds"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Nala Sinephro",
+        "title": "Space 1.8",
+        "year": 2021,
+        "mood": "meditative ambient jazz",
+        "reason": "Your recent listening across Portico Quartet, Hania Rani and Nils Frahm points toward meditative, spacious music — Nala Sinephro's Space 1.8 is one of the most transcendent pieces in recent UK jazz.",
+        "spotifyUrl": "https://open.spotify.com/search/Nala%20Sinephro%20Space%201.8"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Lawrence",
+        "title": "Velvet",
+        "year": 2010,
+        "mood": "warm minimal deep house",
+        "reason": "Given your recent runs through Axel Boman and the deeper end of house music, Lawrence's Velvet is a beautifully restrained, emotionally warm track that rewards patient listening.",
+        "spotifyUrl": "https://open.spotify.com/search/Lawrence%20Velvet"
+      },
+      {
+        "kind": "song",
+        "tier": "recent_discovery",
+        "artist": "Floating Points",
+        "title": "LesAlpx",
+        "year": 2015,
+        "mood": "euphoric organic club music",
+        "reason": "With O'Flynn, Dominik Eulberg and Four Tet all in your recent listening, Floating Points' LesAlpx — organic percussion meets deep electronic harmony — is a perfect next discovery.",
+        "spotifyUrl": "https://open.spotify.com/search/Floating%20Points%20LesAlpx"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "The Avalanches",
+        "title": "Since I Left You",
+        "year": 2000,
+        "mood": "euphoric sample odyssey",
+        "reason": "You've been deep in No Bad Memories and your 7-day plays confirm The Avalanches are the current obsession — the original Since I Left You track is the euphoric peak of their whole catalogue.",
+        "spotifyUrl": "https://open.spotify.com/search/The%20Avalanches%20Since%20I%20Left%20You"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Romare",
+        "title": "Projections",
+        "year": 2022,
+        "mood": "soulful beat collage",
+        "reason": "You've played Motherless Child and multiple Romare tracks this week — Projections is the title track from his most recent album and it pulls together everything he does brilliantly.",
+        "spotifyUrl": "https://open.spotify.com/search/Romare%20Projections"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Radiohead",
+        "title": "Exit Music (For a Film)",
+        "year": 1997,
+        "mood": "cinematic brooding crescendo",
+        "reason": "You've been through In Rainbows front to back this week — Exit Music is a different-era Radiohead peak, a slowly suffocating, breathtaking track that suits exactly this kind of deep listening mood.",
+        "spotifyUrl": "https://open.spotify.com/search/Radiohead%20Exit%20Music%20(For%20a%20Film)"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Bibio",
+        "title": "Lover's Carvings",
+        "year": 2009,
+        "mood": "hazy warm folk-electronic",
+        "reason": "Bibio has been heavy in your current rotation, and Lover's Carvings from Ambivalence Avenue is his most beloved track — summer-hazy, intimate and quietly euphoric.",
+        "spotifyUrl": "https://open.spotify.com/search/Bibio%20Lover's%20Carvings"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Todd Terje",
+        "title": "Inspector Norse",
+        "year": 2012,
+        "mood": "cosmic disco euphoria",
+        "reason": "Todd Terje appeared in your last 7 days of listening — Inspector Norse is one of the most purely joyful tracks in disco-influenced electronic music, and it's hard to resist right now.",
+        "spotifyUrl": "https://open.spotify.com/search/Todd%20Terje%20Inspector%20Norse"
+      },
+      {
+        "kind": "song",
+        "tier": "current_mood",
+        "artist": "Frank Ocean",
+        "title": "Seigfried",
+        "year": 2016,
+        "mood": "fractured intimate meditation",
+        "reason": "Frank Ocean has been a constant this past month — Seigfried is Blonde's most searching, restless track, the one that rewards the kind of attentive, late-night listening you're clearly in the mood for.",
+        "spotifyUrl": "https://open.spotify.com/search/Frank%20Ocean%20Seigfried"
+      }
+    ]
+  },
+  "djSets": [
+    {
+      "artist": "O'Flynn",
+      "setName": "O'flynn - Wildeburg 2026",
+      "url": "https://soundcloud.com/wildeburg/oflynn-wildeburg-2026",
+      "createdAt": "2026-10-16T08:47:42Z",
+      "durationSeconds": 7273
+    },
+    {
+      "artist": "Stones Taro",
+      "setName": "Stones Taro @ The Lot Radio 09-24-2026",
+      "url": "https://soundcloud.com/thelotradio/stones-taro-the-lot-radio-09",
+      "createdAt": "2026-09-25T21:27:16Z",
+      "durationSeconds": 3526
+    },
+    {
+      "artist": "Stones Taro",
+      "setName": "Stones Taro - 10 August 2026",
+      "url": "https://soundcloud.com/rinsefm/stones-taro-10-august-2026",
+      "createdAt": "2026-09-02T16:11:26Z",
+      "durationSeconds": 3603
+    },
+    {
+      "artist": "Anish Kumar",
+      "setName": "Anish Kumar @ Peckham Palais | 06.03.2026",
+      "url": "https://soundcloud.com/anishkumarmusic/anish-kumar-peckham-palais-06",
+      "createdAt": "2026-03-13T13:08:31Z",
+      "durationSeconds": 10798
+    },
+    {
+      "artist": "Dominik Eulberg",
+      "setName": "Dominik Eulberg - Lepidoptera DJ Mix",
+      "url": "https://soundcloud.com/dominik-eulberg/dominik-eulberg-lepidoptera-dj-mix",
+      "createdAt": "2025-11-03T02:46:54Z",
+      "durationSeconds": 3602
+    }
+  ]
+}
